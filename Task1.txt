@@ -1,0 +1,21 @@
+How to compare two json have the same properties without order
+
+Ans : By using Key and Value
+
+var obj1 = {name: "Person 1", age:5};
+var obj2 = {age:5, name: "Person 1"};
+
+var key1 = Object.keys(obj1);
+var val1 = Object.values(obj1);
+var key2 = Object.keys(obj2);
+var val2 = Object.values(obj2);
+
+if ((key1[0] === key2[1]) && (val1[0] === val2[1]))
+
+{
+    console.log("True");
+}
+else
+{
+    console.log("False");
+}
